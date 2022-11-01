@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.3 on win32)" generated="20221030 19:16:17.976" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.7.3 on win32)" generated="20221101 08:06:12.671" rpa="false" schemaversion="3">
+<suite id="s1" name="TodoProject" source="C:\Users\halif\OneDrive\Bureau\ESGI\5AL\S1\FYC\TodoProject\TodoProject.robot">
+<test id="s1-t1" name="Empty list can have item added" line="12">
+<kw name="Open TodoMVC Page Using Chrome Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MAIN_PAGE}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221101 08:06:13.068" level="INFO">Opening browser 'Chrome' to base url 'https://todomvc.com/examples/react/#/'.</msg>
+<msg timestamp="20221101 08:06:17.539" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221101 08:06:17.540" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x008C5FD3+2187219]
+	Ordinal0 [0x0085E6D1+1763025]
+	Ordinal0 [0x00773E78+802424]
+	Ordinal0 [0x007951F9+938489]
+	Ordinal0 [0x00790DDC+921052]
+	Ordinal0 [0x0078E691+910993]
+	Ordinal0 [0x007C17F0+1120240]
+	Ordinal0 [0x007C144A+1119306]
+	Ordinal0 [0x007BC9A6+1100198]
+	Ordinal0 [0x00796F80+946048]
+	Ordinal0 [0x00797E76+949878]
+	GetHandleVerifier [0x00B690C2+2721218]
+	GetHandleVerifier [0x00B5AAF0+2662384]
+	GetHandleVerifier [0x0095137A+526458]
+	GetHandleVerifier [0x00950416+522518]
+	Ordinal0 [0x00864EAB+1789611]
+	Ordinal0 [0x008697A8+1808296]
+	Ordinal0 [0x00869895+1808533]
+	Ordinal0 [0x008726C1+1844929]
+	BaseThreadInitThunk [0x765E6739+25]
+	RtlGetFullPathName_UEx [0x772D90AF+1215]
+	RtlGetFullPathName_UEx [0x772D907D+1165]
+</msg>
+<status status="FAIL" starttime="20221101 08:06:13.068" endtime="20221101 08:06:17.645"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20221101 08:06:17.646" endtime="20221101 08:06:17.646"/>
+</kw>
+<status status="FAIL" starttime="20221101 08:06:13.068" endtime="20221101 08:06:17.647"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221101 08:06:17.648" endtime="20221101 08:06:17.648"/>
+</kw>
+<status status="FAIL" starttime="20221101 08:06:13.067" endtime="20221101 08:06:17.648">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x008C5FD3+2187219]
+	Ordinal0 [0x0085E6D1+1763025]
+	Ordinal0 [0x00773E78+802424]
+	Ordinal0 [0x007951F9+938489]
+	Ordinal0 [0x00790DDC+921052]
+	Ordinal0 [0x0078E691+910993]
+	Ordinal0 [0x007C17F0+1120240]
+	Ordinal0 [0x007C144A+1119306]
+	Ordinal0 [0x007BC9A6+1100198]
+	Ordinal0 [0x00796F80+946048]
+	Ordinal0 [0x00797E76+949878]
+	GetHandleVerifier [0x00B690C2+2721218]
+	GetHandleVerifier [0x00B5AAF0+2662384]
+	GetHandleVerifier [0x0095137A+526458]
+	GetHandleVerifier [0x00950416+522518]
+	Ordinal0 [0x00864EAB+1789611]
+	Ordinal0 [0x008697A8+1808296]
+	Ordinal0 [0x00869895+1808533]
+	Ordinal0 [0x008726C1+1844929]
+	BaseThreadInitThunk [0x765E6739+25]
+	RtlGetFullPathName_UEx [0x772D90AF+1215]
+	RtlGetFullPathName_UEx [0x772D907D+1165]
+</status>
+</test>
+<status status="FAIL" starttime="20221101 08:06:12.673" endtime="20221101 08:06:17.650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TodoProject">TodoProject</stat>
+</suite>
+</statistics>
 <errors>
 </errors>
 </robot>
