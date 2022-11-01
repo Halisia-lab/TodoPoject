@@ -53,5 +53,3 @@ The filter is unset to
 
 Clear completed is unavailable
     Wait Until Element Is Not Visible    //button[text()='Clear completed']
-
-////
